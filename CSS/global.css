@@ -1,0 +1,42 @@
+:body {
+    position: relative;
+    overflow: hidden;
+    font-size: 60%;
+   /* font-family: 'Archivo', sans-serif;
+    font-family: 'Poppins', sans-serif;*/
+
+    --color-background: #F0F0F7;
+    --color-cor-primaria: #EBB77C;
+    --color-cor-vermelho: #B41F24;
+    --color-cor-verde: #1E4351;
+    --color-cor-fundo: #C7BEAE;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100vh;
+}
+
+body{
+    background: #F0F0F7;
+}
+
+body,
+input,
+button,
+textarea{
+    font: 500 1.6rem Poppins;
+    color: var(--color-cor-verde);
+} 
+
+
+/*@media (min-width: 700px){
+    :root{
+        font-size: 62.5%;
+    }
+}*?

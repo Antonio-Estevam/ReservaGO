@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresas Acesso</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link href="../CSS/global.css" rel="stylesheet">    
+    <link href="../CSS/empresa_log.css" rel="stylesheet">    
+</head>
+<body>
+<main id="main">
+    <nav id="navMobile">
+        <img src="../IMG/logo_nav.svg" alt="logo">
+        <div id="bt_menu">
+
+            <input type = "button" id="bt-menu" onclick="alerta()">
+            <img src="../IMG/menu_nav.svg" alt="logo" id="imgMenu">   
+            
+            <ul>
+                <li><a href="index.html">HOME</a></li>                
+            </ul>
+            
+        </div>
+    </nav>
+    <h1>Faça o Login da sua empresa ou crie sua conta caso não tenha.</h1>
+
+    <img id="logoDuplo" src="../IMG/logoDuplo_home.svg" alt="logo">  
+    
+    <form id="formAcesso" action="#" method="POST">
+       
+          <div class="container">
+            <div class="content">            
+            
+                <input type="email"name='mailEmp' placeholder="E-mail">
+                <input type="password"name='senhaEmp' placeholder="Senha">               
+                        <!--revisar a gambiarra para centralizar o botão-->
+                   <center>
+                       <input type="submit" value="ACESSAR" class="bt-reserva">
+                       <input type="button" value="criar" class="bt-reserva">
+                    </center> 
+                            
+            </div>
+            
+        </div>
+
+
+    </form>
+</main>
+
+   
+<script type="text/javascript" src="../JAVASCRIPT/index.js"></script>    
+</body>
+</html>

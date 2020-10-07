@@ -1,0 +1,207 @@
+#main{
+ background: #EBB77C;
+ width: 100%;
+ align-items: unset;
+ flex-direction: column;
+ padding-bottom: 35px;
+}
+
+#main #navMobile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;    
+   }
+#main #navMobile ul{
+    display: none;
+}   
+#imgMenu{
+    cursor: pointer;
+}   
+
+h1{ 
+    display: flex;
+    color: #1E4351;
+    font-size:1.5rem;
+    max-width:90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:50px;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 400;
+}
+
+#main #logoDuplo{    
+    display: flex;
+    width: 30%;
+    max-width:144px;
+    min-width:90px;
+    align-items: center;
+    justify-content: center;
+    margin-top:30px;
+    margin-bottom:30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main #formBusca{
+    display: flex;    
+   justify-content: center;
+   margin-bottom: 35px;
+}
+#main #formBusca input{
+    width:80%;
+    font-size: 0.8rem;
+    color: #1e4351; 
+    padding: 6px;
+    border-radius: 7px; 
+    max-width: 500px;
+    border: none;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 300;
+    -webkit-box-shadow: 13px 13px 15px -16px rgba(0, 0, 0, 0.864);
+    -moz-box-shadow: 13px 13px 15px -16px rgba(0,0,0,0.51);
+    box-shadow: 13px 13px 15px -16px rgba(0,0,0,0.51);    
+}
+#main #formBusca input::placeholder{
+    font-size: 1rem;
+    color: #1e4351a4; 
+    font-family: 'Archivo', sans-serif;
+    font-weight: 300;   
+}
+
+#main #filtro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#filtro legend{
+    display: flex;
+    font-size: 0.8rem;
+    color: #1e4351a4;  
+    font-family: 'Archivo', sans-serif;
+    font-weight: 300; 
+    margin-left: 10px;  
+    justify-content: left;  
+}
+
+#filtro select{
+    padding: 5px;
+    width: 80%;
+    border-radius: 7px;    
+    margin-bottom: 10px;
+    max-width: 500px;
+    border: none;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 300;
+    -webkit-box-shadow: 13px 13px 15px -16px rgba(0,0,0,0.51);
+    -moz-box-shadow: 13px 13px 15px -16px rgba(0,0,0,0.51);
+    box-shadow: 13px 13px 15px -16px rgba(0,0,0,0.51);
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: red;
+    width: 80%;
+    max-width:700px;
+    border-radius: 6px; 
+    background-color: #fff;
+    -webkit-box-shadow: 13px 13px 15px -16px rgba(0,0,0,0.51);
+    -moz-box-shadow: 13px 13px 15px -16px rgba(0,0,0,0.51);
+    box-shadow: 13px 13px 15px -16px rgba(0,0,0,0.51);    
+    
+}
+
+.content .nome{
+    color: #1E4351;
+    font-size:1.5rem;    
+    font-family: 'Archivo', sans-serif;
+    font-weight: 300;
+}
+
+.content .enderco{
+    color: #1E4351;
+    font-size:0.7rem; 
+    font-family: 'Archivo', sans-serif;
+    font-weight: 300;
+    margin-right:10px;   
+}
+
+.grupo{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 40px;
+    margin-left: 20px;
+    column-gap: 10px;
+}
+.bt-reserva{
+    color: #1E4351;
+    font-size:1rem;
+    border: none; 
+    padding: 5px 2px;
+    width:30%;
+    min-width:100px;
+    max-width: 300px;
+    background-color: #EBB77C;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+}
+
+
+
+@media (min-width: 700px){ /*Adaptando a tela maiores que 700px*/
+    h1{ 
+        width:80%;
+        max-width: 560px;
+    }
+}
+@media (min-width: 900px){ /*Adaptando a tela maiores que 900px*/
+    #main #navMobile #bt-menu, #imgMenu{
+        display: none;           
+       }
+
+    #main #navMobile ul{
+        display: flex;
+        flex-direction: row;       
+       }
+
+    #main #navMobile ul li{
+        display: flex;  
+        text-decoration: none;
+        
+       }
+
+    #main #navMobile ul li a{ 
+        text-decoration: none;
+        font-family: 'Archivo', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: #B41F24;
+        margin-top:5px;
+        margin-left: 20px;
+        
+       }
+    
+       #main #navMobile ul li a:hover{
+        color: #8f2427;
+       }    
+
+    }

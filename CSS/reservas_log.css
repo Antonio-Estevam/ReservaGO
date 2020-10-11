@@ -129,7 +129,7 @@ a {
     transition: 1s;
 }
 
-a:hover {
+li a:hover {
     font-size: 2.2rem;
     color: #8f2427;
 
@@ -146,12 +146,11 @@ h1{
     color: #1E4351;
     font-size:1.5rem;
     max-width:90%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
     margin-top:50px;
+    margin-left: auto;
     font-family: 'Archivo', sans-serif;
     font-weight: 400;
+    justify-content: center;
 }
 
 #main #logoDuplo{    
@@ -238,9 +237,10 @@ h1{
 
 
 @media (min-width: 700px){ /*Adaptando a tela maiores que 700px*/
-    h1{ 
-        width:80%;
-        max-width: 560px;
+    h1{      
+        margin-left: auto;
+        margin-right: auto;
+
     }
 }
 @media (min-width: 900px){ /*Adaptando a tela maiores que 900px*/

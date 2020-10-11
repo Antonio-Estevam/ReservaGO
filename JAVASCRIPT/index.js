@@ -7,4 +7,10 @@ function alerta(){
 
 
 
+let BtCriaEmp = document.querySelector('#criarEmp');
 
+console.log(BtCriaEmp);
+
+BtCriaEmp.addEventListener('click',()=>{
+    window.location.href = "empresa.html";
+});

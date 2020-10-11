@@ -33,10 +33,3 @@ textarea{
     font: 500 1.6rem Poppins;
     color: var(--color-cor-verde);
 } 
-
-
-/*@media (min-width: 700px){
-    :root{
-        font-size: 62.5%;
-    }
-}*?

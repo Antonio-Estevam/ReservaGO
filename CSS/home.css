@@ -1,3 +1,143 @@
+/*Menu teste */
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*html {
+    background: url(https://d36tnp772eyphs.cloudfront.net/blogs/1/2011/05/thailand-1200x819.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}*/
+
+.menu {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 15px;
+    right: 25px;
+}
+
+.hamburguer {
+    position: relative;
+    display: block;
+    background: #1E4351;
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    left: 15px;
+    transition: .4s ease-in-out;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+    background:#8f2427;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: .4s ease-in-out;
+}
+
+.hamburguer:before {
+    top: -10px;
+}
+
+.hamburguer:after {
+    bottom: -10px;
+}
+
+#menu-hamburguer {
+    display: none;
+}
+
+#menu-hamburguer:checked~label .hamburguer {
+    transform: rotate(45deg);
+}
+
+#menu-hamburguer:checked~label .hamburguer:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+#menu-hamburguer:checked~label .hamburguer:after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+.menu {
+    cursor: pointer;
+    box-shadow: 0 0 0 0 #000, 0 0 0 0 #000;
+    transition: box-shadow 1.1s cubic-bezier(.19, 1, .22, 1);
+    opacity: .9;
+}
+
+
+/*A ANIMAÇÃO DO MENU ***/
+
+#menu-hamburguer:checked~label .menu {
+    box-shadow: 0 0 0 130vw #000, 0 0 0 130vh #000;
+}
+
+
+/*APARECER O MENU AO CLICAR ***/
+
+#menu-hamburguer:checked~ul {
+    opacity: 1;
+    display: block;
+    
+}
+
+
+
+/*A ANIMAÇÃO E ESTILO DO MENU ***/
+
+ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    font-size: 30px;
+    opacity: 0;
+    transition: .25s .1s cubic-bezier(0, 1.07, 0, 1.02);
+    z-index: 2;
+    display: none;
+}
+
+li a {
+    color:#EBB77C;
+    display: block;
+    margin-bottom: 1em;
+    text-decoration: none;
+    font-family: 'Archivo', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    transition: 1s;
+}
+
+li a:hover {
+    font-size: 2.2rem;
+    color: #8f2427;
+
+}
+
+
+#imgLogo {
+    padding-top: 15px;
+}
+/*Menu teste */
+
+
+
 #main{
  background: #EBB77C;
  width: 100%;
@@ -10,11 +150,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 15px;    
-   }
-#main #navMobile ul{
-    display: none;
-}   
+    padding: 25px 15px;  
+   }  
+     
 #imgMenu{
     cursor: pointer;
 }   
@@ -51,6 +189,7 @@ h1{
    margin-bottom: 35px;
 }
 #main #formBusca input{
+    display: flex;
     width:80%;
     font-size: 0.8rem;
     color: #1e4351; 
@@ -145,7 +284,8 @@ h1{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    margin-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: 20px;
     column-gap: 10px;
 }
@@ -163,6 +303,7 @@ h1{
     margin-bottom: 15px;
     font-family: 'Archivo', sans-serif;
     font-weight: 700;
+    display: block;
 }
 
 
@@ -176,32 +317,6 @@ h1{
 @media (min-width: 900px){ /*Adaptando a tela maiores que 900px*/
     #main #navMobile #bt-menu, #imgMenu{
         display: none;           
-       }
-
-    #main #navMobile ul{
-        display: flex;
-        flex-direction: row;       
-       }
-
-    #main #navMobile ul li{
-        display: flex;  
-        text-decoration: none;
-        
-       }
-
-    #main #navMobile ul li a{ 
-        text-decoration: none;
-        font-family: 'Archivo', sans-serif;
-        font-size: 1.2rem;
-        font-weight: 300;
-        color: #B41F24;
-        margin-top:5px;
-        margin-left: 20px;
-        
-       }
-    
-       #main #navMobile ul li a:hover{
-        color: #8f2427;
-       }    
+       } 
 
     }

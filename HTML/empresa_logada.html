@@ -11,15 +11,23 @@
 <body>
 <main id="main">
     <nav id="navMobile">
-        <img src="../IMG/logo_nav.svg" alt="logo">
-        <div id="bt_menu">
+        <a href="index.html">
+            <img src="../IMG/logo_nav.svg" alt="logo">
+        </a>
+        
 
-            <input type = "button" id="bt-menu" onclick="alerta()">
-            <img src="../IMG/menu_nav.svg" alt="logo" id="imgMenu">   
-            
-            <ul>
-                <li><a href="index.html">HOME</a></li>                
-            </ul>
+        <input id="menu-hamburguer" type="checkbox">
+        <label for="menu-hamburguer">
+        <div class="menu">
+            <span class="hamburguer"></span>
+        </div>
+        </label>
+        <ul>            
+            <li><a href="empresa_logada.html">HOME</a></li>
+            <li><a href="#">EDITAR PERFIL</a></li>
+            <li><a href="#">CRIAR OU EDITAR HORÁRIOS</a></li>
+            <li><a href="index.html">SAIR</a></li>
+        </ul>
             
         </div>
     </nav>

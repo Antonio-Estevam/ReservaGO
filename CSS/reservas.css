@@ -10,7 +10,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 15px; 
-    background: #EBB77C;   
+    background: rgb(235,183,124);
    }
  
 /*Estilo do menu */
@@ -265,6 +265,15 @@ margin-right: 10px;
 font-size: 0.9rem;
 }
 
+#edtR{
+    font-size: 1rem;
+    margin-top: 10px;
+    background: #EBB77C;
+    color: #1E4351;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 13px 13px 15px -16px rgba(0,0,0,0.51);    
+}
 
 
 @media (min-width: 700px){ /*Adaptando a tela maiores que 700px*/

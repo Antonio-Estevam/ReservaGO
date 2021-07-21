@@ -4,11 +4,11 @@
   <img src="./IMG/logo_nav.svg" alt="YOUR_PROJECT_NAME" width="120">
 <br>
 <br>
-Sua plataforma de agendamentos 
+Plataforma de agendamentos 
 </h1>
 
-<p align="center">Sistema com a finalidade de proporcionar facil agendamento em establecimentos do ramo alimentício.<br>
-  Ver layout <a href="http://reservago.epizy.com/HTML/index.html"> clique aqui</a>
+<p align="center">Sistema com a finalidade de proporcionar facil agendamento em establecimentos do ramo alimentício.<br/><br/>
+ <strong> Ver layout <a href="http://reservago.epizy.com/HTML/index.html"> clique aqui</a></strong>
 </p>
 
 <p align="center">
@@ -19,8 +19,7 @@ Sua plataforma de agendamentos
 
 [//]: # (Add your gifs/images here:)
 <div>
-  <img src="IMAGE_1_URL" alt="demo" height="425">
-  <img src="IMAGE_2_URL" alt="demo" height="425">
+<br/>
 </div>
 
 <hr />
